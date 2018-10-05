@@ -296,7 +296,7 @@ contract DecentralisedExchange {
         owner = _owner;
     }
     //constructor pushes a value for SellList, dims us as Owner, and sets count to 0 for the tokens
-    constructor() internal {
+    constructor() {
         count = 0;
         owner = msg.sender;
         SellList.push(msg.sender);
